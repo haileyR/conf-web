@@ -1,0 +1,270 @@
+{  
+   "symposiums":[  
+      {  
+         "category":"Basic Science Program",
+         "subSymposiums":[  
+            {  
+               "title":"Chemistry",
+               "code":"CHM",
+               "content":"Chemistry has been crucial to the understanding of the behavior of materials on molecular level and the advancement of modern technology through its application. Much of recent advances in chemistry were made at the interface of chemistry, physics, biology and engineering and interdisciplinary research is becoming increasingly more important  in solving important problems. This year, Chemistry Symposium invites researchers in academia, industry and government laboratories in broad range of disciplines working on the subjects of (1) Design and preparation of the materials with (i) energy & device and (ii) biomedical applications, (2) Characterization of their structures, properties and functions using experimental, theoretical and computational tools.",
+               "topics": "",
+               "chair":"",
+               "cochairs":[  
+                  ""
+               ],
+               "images":[  
+
+               ]
+            },
+            {  
+               "title":"Physics",
+               "code":"PHY",
+               "content":"The Physics Symposium would bring together world leading scientists and young researchers in various fields of Physics from across the U.S. and Korea. Both fundamental and emergent physics will be presented and the link between the two will be discussed. This meeting will serve as a timely event just a year after the General Relativity’s Centennial. The progress of the Institute for Basic Science (IBS) and the associated Rare Isotope Science Project (RISP) as part of the International Science & Business Belt (ISBB) in Korea is in close connection with the Facility of Rare Isotope Beam (FRIB) and other physics facilities in US.",
+               "topics":[  
+                  "High Energy Physics",
+                  "Nuclear Physics",
+                  "Space and Astrophysics",
+                  "Biophysics",
+                  "Quantum Informatics",
+                  "Condensed Matter Physics"
+               ],
+               "chair":"Chueng-Ryong Ji, North Carolina State University",
+               "cochairs":[  
+                  "Bum-Hoon Lee, Sogang University"
+               ],
+               "images":[  
+
+               ]
+            }
+         ]
+      },
+      {  
+         "category":"Core Engineering and Technology Program",
+         "subSymposiums":[  
+            {  
+               "title":"Chemical Engineering",
+               "code":"CHE",
+               "content":"The Chemical Engineering Symposium is designed to provide a forum for leading experts and young researchers to present and discuss recent advances in Chemical Engineering and related fields. Topics of interest include, but are not limited to: advanced functional materials and devices for energy and environment, carbon dioxide capture and storage, bio-fuels and bio-chemicals, emerging manufacturing technologies for biomedical applications, and catalytic and electrocatalytic approaches. Both experimental and computational approaches as well as synergistic methods to address grand challenges are welcome.  Do not miss the opportunity to meet and discuss the latest cutting-edge research in those rapidly evolving fields with prominent engineering leaders.",
+               "chair":"",
+               "cochairs":[  
+                  ""
+               ],
+               "images":[  
+
+               ]
+            },
+            {  
+               "title":"Computer sciences and Information Technologies",
+               "code":"CIT",
+               "content":"Recent advances in Information Technology have dramatically changed the nature of computing. Cloud computing has made unlimited computing and storage resources available to any individual or enterprise. Mobile devices are rapidly replacing desktop computers while tiny sensors are getting connected to the Internet. Social media is profoundly changing the way we interact with others and how companies conduct business. All these trends contribute to the Big Data problem, which brings a new challenge to data mining and analytics. The Computer sciences and Information Technologies (CIT) symposium encompasses diverse areas of research and development in CS/IT fields as well as industrial engineering and management sciences. The symposium will provide a unique venue for CS/IT researchers and engineers from both academia and industry in the US and Korea to display state-of-the-art research and development, exchange creative ideas, and build a strong network among participants. Topics of interests include, but are not limited to:",
+               "topics":[  
+                  "Big data analytics and machine learning",
+                  "Web engineering, Internet technology and applications",
+                  "Mobile and wireless computing",
+                  "Internet of Things (IoT)",
+                  "Unmanned aircraft systems (UAS) applications",
+                  "Control systems and intelligent systems",
+                  "Real-time embedded systems and cyber-physical systems",
+                  "High performance computing and its applications",
+                  "Parallel and distributed computing",
+                  "Computer architecture and VLSI",
+                  "Software architecture and design patterns",
+                  "Middleware architectures design ",
+                  "Computer graphics, visualization, and computer vision",
+                  "Multimedia systems and applications",
+                  "Information security",
+                  "Human computer interface",
+                  "Social media applications",
+                  "Management information systems and e-Commerce",
+                  "Industrial engineering"
+               ],
+               "chair":"Prof. Yoohwan Kim (University of Nevada Las Vegas, USA)",
+               "cochairs":[  
+                  "Dr. Jeho Park (Harvey Mudd Collage, USA)",
+                  "Prof. Sungdeok (Steve) Cha (Korea University, Korea)"
+               ],
+               "images":[  
+
+               ]
+            },
+            {  
+               "title":"Food, Agriculture, and Nutrition",
+               "code":"FAN",
+               "content":" Food, Agriculture, and Nutrition Symposium offers professionals in the Food, Agriculture, and Nutrition fields a multidisciplinary platform to learn about the latest scientific advances from academic, government, and industrial leaders. The symposium covers all areas of foods, agricultural products, and nutrition. Specifically, the symposium focuses on: (1) scientific information on food science including functional food, food processing, food quality, safety and regulation, food nanotechnology, and other emerging food technologies; (2) scientific information and development in agriculture including agronomy, insect science, forestry, plant and animal sciences, and other agricultural areas; and (3) advances in nutrition, mechanistic understanding of nutrient actions on human health, and prevention and treatment of various disease conditions including obesity, diabetes, cancer, stroke, and many other disorders using nutritional approaches. The symposium is a great opportunity to communicate latest advances in science and technology as well as public health policies involving food, agriculture and nutrition, and stimulate collaboration between participants from US and Korea in this subject area.",
+               "chair":"Dr. Haejung Ahn, NIH, USA",
+               "cochairs":[  
+                  "Hyojee Joung, Seoul National University, Korea",
+                  "Dr. Hee-Yong Park, Seoul National Universiy, Korea"
+               ],
+               "images":[  
+
+               ]
+            },
+            {  
+               "title":"Mechanical, Aerospace and Naval Engineering",
+               "code":"MAN",
+               "content":"The Mechanical, Aerospace and Naval EngineeringTechnical Group brings researchers, students, and application practitioners across the US and Korea to discuss on and present a variety of research and application topics on the fields. The symposium will explore both the traditional and state-of-the-art topics that include, but not limited to, design, manufacturing, energy systems, fluid, thermal and dynamic systems, nano and MEMS technologies, mechatronics, computational simulations, engineering education, and their studies and specific applications to mechanical, aerospace and naval applications. Many interdisciplinary research and applications in emerging areas will be presented.",
+               "chair":"Dr. Sung Kwon Cho, University of Pittsburgh",
+               "topics":[  
+
+               ],
+               "cochairs":[  
+                  "Dr. Taehun Lee, City University of New York",
+                  "Dr. Jung-Hoon Chung (Korea Institute of Machinery and Materials, Korea)"
+               ],
+               "images":[  
+
+               ]
+            },
+            {  
+               "title":"Materials Science and Engineering",
+               "code":"MSE",
+               "content":"Materials Science and Engineering is an interdisciplinary research field which deals with science and technology of materials.  It is anticipated that the MSE symposium will bring researchers together from a variety of disciplines to share the current state-of-the-art of the materials research.  Therefore, it is strongly encouraged to submit a paper on research topics.",
+               "topics":[  
+                  "Electronic, photonic, dielectric, and magnetic materials",
+                  "Compound semiconductor materials (III-V and II-VI semiconductors)",
+                  "Materials issues in electronic packaging",
+                  "Structural and composite materials",
+                  "Organic and polymeric materials",
+                  "Strongly correlated materials",
+                  "Glass and amorphous materials",
+                  "Biomaterials and bio-inspired materials research",
+                  "Novel multi-functional materials (spintronic and multiferroic materials, etc.)",
+                  "Photonic crystals ",
+                  "Materials for 3-dimensional printing",
+                  "Materials by design",
+                  "Metamaterials",
+                  "Materials for display (transparent conducting oxide (TCO), etc.)",
+                  "Materials for energy harvesting and storage (photovoltaics, thermoelectrics, fuel cells, batteries, and supercapacitors, etc.)",
+                  "Superconducting materials",
+                  "Nanomaterials (nanowires, nanoparticles, and quantum dots, etc.)",
+                  "2-dimensional materials (graphenes and transition metal dichalcogenides, etc.)",
+                  "Materials characterization/analysis",
+                  "Materials theory/simulation",
+                  "Crystal growth and epitaxy"
+               ],
+               "chair":"Minseo Park, Auburn University (USA)",
+               "cochairs":[  
+                  "Jiyoung Kim, University of Texas, Dallas (USA)",
+                  "Hyun Jae Kim, Yonsei University (KOREA)"
+               ],
+               "images":[  
+
+               ]
+            },
+            {  
+               "title":"Civil, Environmental, and Architecture",
+               "code":"CEA",
+               "content":"The purpose of this symposium is to promote awareness of new advances in structures, architectures, transportation, geotechnical, materials, construction, and water & environment. There will be a special session that focuses on state-of-the-art and state-of-the-practice technologies and applications that are related to the sustainability and resilience of civil, environment, and architecture engineering. The symposium will be composed of eight sessions. The sessions will cover different disciplines in the three major disciplines in the CEA track, i.e., civil engineering, environmental engineering, and architectural engineering. Each session will have one invited speaker. In addition, a poster session is planned to encompass all the disciplines in civil, environmental, and architecture tracks.",
+               "chair":"Prof. Yong-Rak Kim (University of Nebraska, USA)",
+               "cochairs":[  
+                  "Prof. Brian Byungkyu Park (University of Virginia, USA)",
+                  "Prof. Seoktae Kang (KAIST, Korea)"
+               ]
+            }
+         ]
+      },
+      {  
+         "category":"Emerging Science Technology Program",
+         "subSymposiums":[  
+            {  
+               "title":"Biology, Medicine and Pharmaceutical Sciences",
+               "code":"BMP",
+               "content":"Biology, Medicine and Pharmaceutical Sciences (BMP) Symposium Biomedical sciences has greatly enhanced our understanding of molecular and cellular mechanisms underpinning various aspects of living organisms in health and disease. Many of the outstanding questions in biomedical research call for interdisciplinary collaboration among scientists in basic science, clinical medicine, and pharmaceutical sciences.  Accordingly, the goal of BMP symposium is to present the latest advances in biological, medical, and pharmaceutical sciences, to facilitate mutual understanding of these rapidly advancing fields, and to foster collaboration across the disciplines. As a part of the Emerging Technology Program, we will focus on introducing latest developments in not only biomedical principles but technologies to enrich our understanding. This year our symposium is designed to cover topics ranging from basic biology to translational science to clinical medicine. Accordingly, the number of sessions of the symposium is increased compared to previous years covering genome editing, systems biology and bioinformatics, RNA biology, cardiovascular science, cancer, immunology, neuroscience, stem cell research, and drug discovery. I believe that this BMP symposium will offer an invaluable opportunity for a wide range of scientists, engineers, and physicians to broaden their perspectives and to facilitate collaboration among participants.",
+               "chair":"Young-sup Yoon (Emory University, USA)",
+               "cochairs":[  
+                  "In-Hyun Park (Yale University, USA)",
+                  "Young-Geun Kwon (Yonsei University, Korea)"
+               ]
+            },
+            {  
+               "title":"Convergence Technology",
+               "code":"CNV",
+               "content":"As in any other major industry, problem solving in modern medicine increasingly requires a true convergence of many scientific and engineering fields. While some of the last frontiers of biomedicine, such as neuroscience and regenerative medicine, critically demands new ideas and tools from other disciplines, paradigm-shifting technological innovations in information science, nanotechnology, and robotics could open new opportunities in healthcare. At the same time, a new generation of engineers, 'fluent' in many different languages of science, are creating entirely new fields to view the old questions with a fresh look. In the CNV symposium, we strive to provide a stimulating forum for all researchers willing to go beyond the 'comfort zone' to explore new opportunities in biomedical engineering.",
+               "topics":[  
+                  "Nanotechnology and Nanomedicine",
+                  "Biomaterials and Synthetic Microenvironment",
+                  "Regenerative Medicine and Stem Cell Engineering",
+                  "Biomechanics and Mechanobiology",
+                  "Neuroengineering and Neuroscience ",
+                  "Synthetic Biology and Systems biology ",
+                  "Biomedical Devices and Imaging ",
+                  "Robotics and Informatics in Healthcare, Emerging Theranostics",
+                  "Lab-on-chip, Organ-on-chip, and Sensor",
+                  "Immune Engineering and Therapy"
+               ],
+               "chair":"Ick Chan Kwon (KIST)",
+               "cochairs":[  
+                  "Jennifer Shin (KAIST)",
+                  "Ho-Wook Jun (University of Alabama at Birmingham)"
+               ],
+               "images":[  
+
+               ]
+            }
+         ]
+      },
+      {  
+         "category":"Special Program",
+         "subSymposiums":[  
+            {  
+               "title":"Energy, Physical and Cyber Systems",
+               "code":"EPC",
+               "content":"The symposium addresses all aspects of the engineering and applied sciences in the following areas: Energy Sources and Power Plants (variety of fuel alternatives including syngas, fuel cell, power plant technologies, nuclear power, wind energy, solar energy, gas turbine, etc Intelligent Transportation Systems and Sustainability (sustainable transportation systems, case studies in transportation, environmental impacts of different transportation systems, etc Robotics and Interdisciplinary Syste Cyber Physical Systems (any systems of collaborating computational elements controlling physical entities such as IT applications in vehicle desig Carbon, Graphene, Carbon Fiber, Their Composites and Applications Thereof Each area will bring together the best and brightest experts from both US and Korea to share the latest technology, research and development, and application.   It offers a prestigious opportunity to publish in the technical conference and interface with experts from all facets of the sectors: Government, academia and industry.  The symposium will cover a wide spectrum of cutting-edge technologies under each area in a multidisciplinary way in order to find novel solutions across the expertise.",
+               "chair":"Hee-Koo Moon",
+               "cochairs":[  
+                  ""
+               ],
+               "images":[  
+
+               ]
+            },
+            {  
+               "title":"Global Climate Change and the Path to Solutions",
+               "code":"CLC",
+               "content":"The modernization of planet Earth has led to energy evolving from a luxury, to a utility, to now a fundamental necessity for mankind.  The demand for energy to support numerous current and emerging industries continues to grow at an exponential rate.  Thus, global efforts for excavating natural fossil energy resources have been vigorous. The use of fossil energy generates greenhouse gas (GHG) emissions, which have been shown to contribute to global climate change.  If left unchecked they will eventually lead to the destruction of planet Earth.  Therefore, the urgency surrounding this situation is enormous.  As a result, great efforts have been made for harvesting renewable energies such as solar, wind, wave, ocean, etc.  However, the demand for energy is so great that its supply is far outpaced by the demand.  It will take many years of reducing GHG to an acceptable level, and sustaining these approaches on a long-term basis while still meeting the current demand for energy, to have a truly sustainable solution.Thus, we need to conserve energy in order for mankind to not only prolong the life of our current natural resources, but also to produce less and reduce GHG emissions overall.  We must do so until these newer energy technologies will be able to supply energy in a manner that does not continue to impact the environment. The main area of consumption of energy in the modern world is in the form of electric power.  Most industries rely on this regardless of whether the energy sources used to generate the electric power are the renewable or non-renewable.  Therefore, the scope of our research should include not only the efficiency of the power plant and their component devices to convert this electric power to useful duties, but also the efficiency of domestic appliances to minimize the consumption of this precious resource. Both issues have a critical impact on the sustainability of not just our modern conveniences, but of all mankind and human existence as we know it. This Symposium will aim to provide scientists and engineers in both the U.S. and Korea with opportunities to exchange information on the means of contributing to the solution of these important issues and to create synergies that will lead to future technological breakthroughs.",
+               "chair":"Dr. Yong Nak Lee",
+               "cochairs":[  
+                  "Kinney H. Kim",
+                  "Thomas Hahn",
+                  "Nakho Sung",
+                  "Burt Lee"
+               ],
+               "images":[  
+
+               ]
+            }
+         ]
+      },
+      {  
+         "category":"KSEA Forums",
+         "subSymposiums":[  
+            {  
+               "title":"Young Generation and Professional Forum",
+               "code":"YGPF",
+               "content":"Thank you for your interest in UKC 2016! The Young Generation and Professional Forum (YGPF) is a collection of sessions at UKC which provides selected group of young professionals, graduate students, and undergraduate students special support or 'fellowship' as listed below. YGPF sessions are open to all UKC participants this year focused on developing the young generation and connections within KSEA members. Abstract submission is required to participate in YGPF. All presentations will be poster presentations. Suggested topics include: A day in the life of your career, ins-and-outs of business school, a recent research endeavor, a review of emerging technology/research area, recently completed research projects, building a successful campus organization, running a KSEA YG group, an overview of state-of-the-art research techniques, reflection on career experiences.",
+               "highlights":[  
+                  "Generous travel, lodging, and meals support",
+                  "UKC keynote speaker series",
+                  "Technical, career, and leadership presentation opportunities",
+                  "Career fair and poster sessions",
+                  "Industry and entrepreneurship forums",
+                  "Networking and mentoring opportunities"
+               ],
+               "topics":[  
+                  "Share your career",
+                  "Leadership",
+                  "Research experiences"
+               ],
+               "chair":"Phillip K Han (Clockwise.MD)",
+               "cochairs":[  
+                  "Katherine Cho (Colin Powell School for Civic and Global Leadership)"
+               ],
+               "images":[  
+
+               ]
+            }
+         ]
+      }
+   ]
+}

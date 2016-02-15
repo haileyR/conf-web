@@ -1,0 +1,251 @@
+@import url(http://fonts.googleapis.com/css?family=Abel);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300italic);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,300,900,800);
+
+
+html{
+	height: 100%;
+}
+body {
+	background-color: #18151e !important;
+	font: 17px 'Archivo Narrow', sans-serif;
+	color:#4B545F !important;;
+	height: 100% !important;;
+	padding-top: 70px;
+} 
+
+nav ul li:hover > ul {display: block;}
+
+footer {
+	color:#666;
+	background-color:#4b545f;
+    width: 100vw;
+}
+footer a {
+	color:#B7EDFF
+}
+footer a:hover {
+    text-decoration: none;
+	color:#FFFFFF;
+}
+footer{
+	padding:20px 0 10px;
+}
+footer h4, footer a {
+	color:#FFFFFF;
+}
+.footertext1 {font-size:15px;
+}
+.footertext2 {font-size:13px;
+}
+.footertext {font-size:13px;
+ color:#FFFFFF;
+}
+#news{ padding:8px 0 0 0;}
+	#news input{font-family:'Archivo Narrow', sans-serif;color:#fff; font-size:15px;vertical-align:middle;font-weight:normal;padding:6px;margin:0;background: url(../images/bg-input.png) 0 0 repeat;outline:none;overflow:hidden; width:146px; border-radius:3px; border:none;}
+	#news textarea{ resize:none; overflow:auto; height:170px;}
+	#news a{ display:block; background:url(../images/news-form.png) 0 0 no-repeat; width:10px; height:16px; float:left; margin:5px 0 0 13px;}
+/* padding */
+.padtop{ padding-top:25px;}
+.padtop22{ padding-top:66px;}
+.padtop2{ padding-top:27px;}
+.padtop3{ padding-top:46px;}
+.padtop4{ padding-top:55px;}
+.padtop5{ padding-top:60px;}
+.padbot{ padding-bottom:20px;}
+.padbot22{ padding-bottom:19px;}
+.padbot4{ padding-bottom:23px;}
+.padbot5{ padding-bottom:11px;}
+
+.padbot2{ margin-bottom:23px;}
+.imgindent{ float:left; margin:5px 11px 0 0;}
+.imgindent2{ margin:4px 10px 0 0;}
+.imgindent3{ margin:4px 0 0 0;}
+.imgindent4{ float:left; margin:5px 20px 0 0;}
+.imgindent5{ margin:2px 0 16px 0;}
+.imgindent6{ margin:5px 20px 0 0;}
+
+.pad{ padding:4px 0 13px 30px;}
+.pad .fleft:first-child{ padding-right:57px;}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+.text-container {
+	width: 90%;
+	margin: 35px auto;
+	color: #B9BDCA;
+	font-size: 15px;
+	line-height: 25px;
+  padding-left: 30px !important;
+}
+.text-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.text-container a {
+  color:  #d35d5d;
+}
+
+.text-container a:hover {
+  color: #f0c9c9 !important;
+}
+
+.thumbnail {
+	background: none !important;
+	text-align: center !important;
+}
+.thumbnail .caption {
+	color: #B9BDCA !important;
+}
+}
+
+#main-saying {
+	font-family: 'Merriweather', serif;
+}
+
+#landing {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 800;
+	color: white;
+	text-align: center;
+}
+
+#landing .text60 {
+	font-size: 60px;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+ .with-sidebar {
+ 	margin: -20px 12px 0 !important;
+ }
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+.sidebar a {
+	color: #B9BDCA;
+  padding: 5px 5px !important;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    border-right: 3px solid #4B545F;
+  }
+}
+
+.selected {
+	border: 2px solid #4B545F;
+	background: #3A3644;
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #4B545F !important;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+.content-container {
+	background: #FBFBFB;
+	padding: 20px 34px;
+	width: 956px;
+    margin: auto;
+    margin-bottom: 20px;
+}

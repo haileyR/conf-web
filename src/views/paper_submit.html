@@ -1,0 +1,311 @@
+
+
+
+<!-- submission all scripts 
+
+// 	function abstract_submit(){
+// 		//document.abstract_form.submit();
+// 		$("#abstract_form").submit(); //validation process has been embedded
+// 	}
+
+// 	function abstract_reset(){
+// 		//$("input[name='name']").val(""); //individually
+// 		$("input[type='text']").val("");
+// 		$("input[type='password']").val("");
+// 		$("input[type='file']").val("");
+// 		$("select").val("");
+// 	}
+	
+// 	////////////////////////////////////////////////////////////////GOTO
+// 	function goto_upload_confirm(){
+// 		//$(".CFP_upload_confirm").trigger("click");
+// 		$(".box2").load("callforpaper/CFP_upload_confirm.php");
+// 		//alert("success");
+// 	}
+
+// 	function goto_update_confirm(){
+// 		//$(".CFP_update_confirm").trigger("click");
+// 		$(".box2").load("callforpaper/CFP_update_confirm.php");
+// 	}
+
+// 	////////////////////////////////////////////////////////////////ETC
+
+	
+// 	function check_abstract_submission_status(){
+// 		self.frames["php_script"].location="db/query_ksea_member_abstract_check.php";
+// 	}
+// </script>
+
+
+<script type="text/javascript">
+
+	$(function(){
+		$.validator.addMethod("valueNotEquals", function(value, element, arg){
+			return arg != value;
+		}, "Value must not equal arg");
+		
+		$.validator.addMethod("accept", function(value, element, param) {
+			return value.match(new RegExp("." + param + "$"));
+		});
+
+		$.validator.addMethod("myFile", function(value, element) { 
+			//return this.optional(element) || /\\([a-z0-9_ ])*\.(docx)/i.test(value); 
+			//return this.optional(element) || /\\([a-z0-9_ ])*\.([pdf||docx])/i.test(value); 
+			var ext = value.split('.').pop();
+			var filterStr = new Array("doc", "docx", "pdf");
+			for(i=0; i<filterStr.length; i++){
+				if (ext == filterStr[i]){
+					return true;
+				}
+			}
+			return false;
+		}, "Invalid file type");
+
+		$("#abstract_form").validate({
+						
+			rules:{
+				confirm_pwd:{
+					equalTo: "#pwd"
+				},
+				fname:{
+					accept: "[a-zA-Z]+"
+				},
+				lname:{
+					accept: "[a-zA-Z]+"
+				},
+				uploadedfile:{
+					myFile: true
+					//accept: "docx"
+					//accept: "docx"
+				},
+				tel:{
+					phoneUS: true
+				},
+				symposium_code:{
+					valueNotEquals: "select"
+				},
+				poster:{
+					valueNotEquals: "select"
+				}
+			},
+			messages:{
+				confirm_pwd: {
+					equalTo: "Passwords don't match"
+				},
+				fname:{
+					accept: "Alphabet characters only"
+				},
+				lname:{
+					accept: "Alphabet characters only"
+				},
+				uploadedfile:{
+					//accept: "Only .docx can be submitted"
+					myFile: "Only .doc, .docx, .pdf formats can be uploaded"
+				},
+				tel:{
+					phoneUS: "Invalid phone number"
+				},
+				symposium_code:{
+					valueNotEquals: "Please select"
+				},
+				poster:{
+					valueNotEquals: "Please select"
+				}
+			}
+		});
+	
+	});
+	
+</script>
+	
+	
+</head>
+<body onLoad="MM_preloadImages('images/step1-over.png', 'images/step1.png', 'images/step2-over.png', 'images/step2.png', 'images/step3-over.png', 'images/step3.png')">
+Header 
+
+
+<header>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+-->
+
+	<div class="content-container">
+			<table width="653" border="0" cellspacing="0" cellpadding="0" style="margin-left:20px;">
+			  <tr>
+			    <td align="center" width="633" height="49" valign="bottom" style="margin:0; padding:0; border-collapse:collapse; border:0;">&nbsp;</td>
+		      </tr>
+			  <tr>
+			    <td align="center"><table width="600" align="center">
+			      <tr>
+			        <td><table width="600">
+			          <tr>
+			            <td style="padding:15px" height="112"><h1 style="font-family:'Roboto'; color: #505050; font-weight: 400; font-size: 30px; font-style: normal;">Paper Submission</h1>
+			              <p style="color:#C43B1D;">Paper must be submitted using the template. </p>
+			              <p style="color:#C43B1D;">* Required</p></td>
+			            <td align="right"><a href="document/UKC2015_Paper_Template.docx"><img src="guide/temp1.jpg"></a><br>
+			              <a href="document/UKC2015_YGPF_Template.docx"><img src="guide/temp2.jpg"></a></td>
+		              </tr>
+			          </table></td>
+		          </tr>
+			      <tr>
+			        <td style="padding: 0px 20px 20px 20px;">
+						<form class="cmxform" action="db/abstract_submission_combined.php" name="abstract_form" id="abstract_form" enctype="multipart/form-data" method="post" target="php_script">
+							<fieldset>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td>
+											<font style="font-size:0.9em;color:#C43B1D;">* Email will be used to check submission status and retrieve submissions.</font>
+										</td>
+									</tr>
+								</table>
+								<br>
+								<p>
+									<label for="email">Email: <font style="color:#C43B1D">*</font></label>
+									<input type="email" name="email" class="required email" size="25"/>
+								</p>
+<!-- 								<p>
+									<label for="pwd">Create Password: <font style="color:#C43B1D">*</font></label>
+									<input type="password" id="pwd" name="pwd" class="required" minlength="7" size="25" />
+								</p>
+								<p>
+									<label for="confirm_pwd">Confirm Password: <font style="color:#C43B1D">*</font></label>
+									<input type="password" name="confirm_pwd" class="required" minlength="7" size="25"/>
+								</p> -->
+								<p>
+									<label for="fname">First Name: <font style="color:#C43B1D">*</font></label>
+									<input type="text" name="fname" class="required" />
+								</p>
+								<p>
+									<label for="lname">Last Name: <font style="color:#C43B1D">*</font></label>
+									<input type="text" name="lname" class="required" />
+								</p>
+								<p>
+									<label for="korean_name">Korean Name: 
+										<span class="small-note">If you have any</span>
+									</label>
+									<input type="text" name="korean_name" class="required" />
+								</p>
+								<p>
+									<label for="affiliation">Affiliation: <font style="color:#C43B1D">*</font></label>
+									<input type="text" name="affiliation" class="required" />
+								</p>
+								<p>
+									<label for="position_title">Position Title:</label>
+									<input type="text" name="position_title" />
+								</p>
+								<p>
+									<label for="education">Education: <font style="color:#C43B1D">*</font>
+										<span class="small-note">Most recent degree/major/institution; ex: PhD/physics/Daehan University</span>
+									</label>
+									<textarea name="education" rows="8" cols="0" class="required"></textarea>
+								</p>
+								<p>
+									<label for="experiences">Experiences: <font style="color:#C43B1D">*</font>
+										<span class="small-note">Year/role/affiliation; ex: 2001-2013/marketing director/Daehan Electronics</span>
+									</label>
+									<textarea name="experiences" rows="8" cols="0" class="required"></textarea>
+								</p>
+								<p>
+									<label for="specialty_or_interest">Areas of Specialty or Interest:</label>
+									<input type="text" name="specialty_or_interest" />
+								</p>
+								<p>
+									<label for="presentation_title">Presentation Title: <font style="color:#C43B1D">*</font></label>
+									<input type="text" name="presentation_title" />
+								</p>
+								<p>
+									<label for="symposium_code"> Symposium Code: <font style="color:#C43B1D">*</font> </label>
+									<? require "config/select_programs_and_forums.php"; ?>
+									<br>
+									<font style="font-size:0.9em;font-weight:bold;">*Scholarship recipients should select 'KSEA Graduate Scholarship Recipients'.</font>
+								</p>
+								<p>
+									<label for="poster"> Presentation Preference: <font style="color:#C43B1D">*</font> </label>
+									<select style="padding:5px;" name="poster" id="poster">
+										<option value="select">- Select -</option>
+										<option value="P">Poster presentation</option>
+										<option value="R">Oral presentation</option>
+									</select>
+								</p>
+								<p>
+									<label for="paper_title">Paper Title: <font style="color:#C43B1D">*</font></label>
+									<input type="text" name="paper_title" class="required" />
+								</p>
+								<p>
+									<label for="authors">Authors: <font style="color:#C43B1D">*</font></label>
+									<textarea name="authors" rows="2" cols="0"></textarea>
+								</p>
+								<p>
+									<label for="address">Address: <font style="color:#C43B1D">*</font></label>
+									<textarea name="address" rows="2" cols="0"></textarea>
+								</p>
+								<p>
+									<label for="keywords">Keywords: <font style="color:#C43B1D">*</font></label>
+									<textarea name="keywords" rows="2" cols="0"></textarea>
+								</p>
+								<p>
+									<label for="signature">Signature: <font style="color:#C43B1D">*</font></label>
+									<input type="text" name="signature" class="required" />
+								</p>
+								<p>
+									<label for="date">Date: <font style="color:#C43B1D">*</font></label>
+									<input type="date" name="date" class="required" />
+								</p>
+								<p>
+									<label for="uploadedfile"> File to Upload (Max. 10MB): <font style="color:#C43B1D">*</font> </label>
+									<input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+									<input type="file" name="uploadedfile" class="required" style="background:none;padding:0px 0 0 0;color:black;" />
+
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td >
+												<font style="font-size:0.9em;color:#C43B1D;">* If your file size is less than 10MB but your submission doesn't proceed in this page, try using smaller size of images attached to your document.</font>
+											</td>
+										</tr>
+									</table>
+								</p>
+								<input type="hidden" name="tel" />
+								<br>
+								<p>
+									<a id="submit"	href="javascript:abstract_submit()" class="btns" data-type="submit">Submit</a> &nbsp;&nbsp;&nbsp; <a href="javascript:abstract_reset()" class="btns" data-type="reset">Clear</a>
+								</p>
+							</fieldset>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="633" height="38" valign="top" style="margin:0 ; padding:0 ; border-collapse:collapse; background-repeat:no;">&nbsp;</td>
+	</tr>
+</table>
+<!--[if IE]>
+</div>
+<![endif]-->
+
+<!-- triggers -->
+<div class="callforpaper/CFP_upload_confirm" style="visibility:hidden"></div>
+<div class="callforpaper/CFP_update_confirm" style="visibility:hidden"></div>
+<div class="call_submission" style="visibility:hidden"></div>

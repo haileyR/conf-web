@@ -1,0 +1,29 @@
+<div class="text-container">
+<h3>CALL FOR PAPERS</h3>
+	<div>
+        The annual US-Korea Conference on Science, Technology, and Entrepreneurship (UKC) will be held at Hyatt Regency DFW Airport Hotel, Dallas, Texas, August 10 - August 13, 2016. The venue of UKC2016 is the epicenter of technology in the United States and various research and networking opportunities will take place.<br><br>The main objective of UKC is to promote the US-Korea cooperation in advancing science and technology. The Korean Federation of Science and Technology Societies (KOFST) is a co-organizer. UKC is sponsored by many industrial companies, research institutes, and government entities. UKC2016 offers the excellent opportunity for collaboration and knowledge transfer among industry leading scientists, engineers, and companies from Korea and USA. At UKC2016, you'll meet the people who lead prime and subprime science and technology, lead and manage government programs, and create business and job opportunities.<br><br>On behalf of the UKC2016 Program Committee and the UKC2016 sponsoring organizations, we invite you to submit a paper presenting your technical solutions, advancements, and knowledge at UKC 2016. UKC2016 will focus on basic science, emerging technology and industry technology. Significant research findings, R&D trends, and future prospects of sciences and technologies are solicited in the areas including, but not limited to the following:<br><br>
+    <div>
+
+	<h3>Symposiums</h3>
+	<ul>
+		<li ng-repeat="topic in ctrl.symposiums">
+			<h4>{{topic.category}}</h4>
+			<ul>
+				<li ng-repeat="symposium in topic.subSymposiums" ng-class="{'selected': symposium.code === ctrl.selectedSympCode}"><a ng-click="ctrl.goToSpecificSymp($parent.$index, $index);">{{symposium.title}}</a></li>
+			</ul>
+		</li>
+	</ul>
+
+
+	All papers are required to be written and presented in English. The papers will be reviewed and selected by each Symposium Program Committee in consultation with the Conference Program Committee. All papers presented at the Conference will be collected and published in a CD. 
+
+	<h4>Submission of papers</h4>
+	<p>All submissions are done electronically on-line using the submission page. Online submission will be available starting February 20, 2016. One-page paper template can be found here.</p> 
+	<p>
+		Papers must be submitted by the following deadlines: <br>
+		Papers: March 15, 2016<br>
+		Notification to Authors: April 15, 2016
+	</p>
+	
+
+</div>

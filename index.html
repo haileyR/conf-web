@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html ng-app="ukc2016" ng-strict-di>
+	<head>
+	<title>UCK 2016</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="src/js/app.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,600,400italic,600italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="src/css/style.css">
+    <!-- <link rel="stylesheet" href="dist/css/front_page_style.css"> -->
+	</head>
+
+	<body ng-controller="UCK2016Controller as ctrl">
+		<header>
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" ng-click="ctrl.selectMenu('')">UKC 2016</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a aria-haspopup="true" aria-expanded="false" ng-click="ctrl.selectMenu('about_ksea')">About <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+					<li><a ng-click="ctrl.selectMenu('greetings')">Greetings</a></li>
+					<li><a ng-click="ctrl.selectMenu('about_ukc')">About UKC</a></li>
+					<li><a ng-click="ctrl.selectMenu('about_ksea')">About KSEA</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a aria-haspopup="true" aria-expanded="false">Call for Papers <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a ng-click="ctrl.selectMenu('call_for_papar')">About Call for Papers</a></li>
+		            <li><a ng-click="ctrl.selectMenu('paper_submit')">Paper Submission</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a ng-click="ctrl.selectMenu('program_glance')" aria-haspopup="true" aria-expanded="false">Program<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a ng-click="ctrl.selectMenu('program_glance')">Program at a glance</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a ng-click="ctrl.selectMenu('symposiums')" aria-haspopup="true" aria-expanded="false">Symposiums<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a ng-click="ctrl.selectMenu('symposiums')">Symposiums</a></li>
+		            <!-- <li><a ng-click="ctrl.selectMenu('forums')">Forums</a></li> -->
+		          </ul>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+	              <li><a href="https://www.ksea.org">KSEA <img src="/ukc2016-hailey/src/img/ksealogo_s.png"></a></li>
+	          </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav> 
+		</header>     
+		<div ng-view class="page-wrap"></div>
+
+		<footer class="site-footer">
+			<div class="container_12" align="center">		
+				<div class="footertext1">
+					<a href="http://ukc.ksea.org/ukc2003/" target="_blank">UKC 2003</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="http://ukc.ksea.org/ukc2006/" target="_blank">UKC 2006</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="http://ukc.ksea.org/ukc2007/" target="_blank">UKC 2007</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="http://ukc.ksea.org/ukc2008/" target="_blank">UKC 2008</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="http://ukc.ksea.org/ukc2009/" target="_blank">UKC 2009</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="http://ukc.ksea.org/ukc2010/" target="_blank">UKC 2010</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="http://ukc.ksea.org/ukc2011/" target="_blank">UKC 2011</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="http://ukc.ksea.org/ukc2012/" target="_blank">UKC 2012</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+		            <a href="http://ukc.ksea.org/ukc2013/" target="_blank">UKC 2013</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="http://ukc.ksea.org/ukc2014/" target="_blank">UKC 2014</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="http://ukc.ksea.org/ukc2015/" target="_blank">UKC 2015</a>
+		            <br><br>
+		            
+		               
+				<p width="65%" class="footertext">Copyright &copy; US-KOREA Conference 2016 | Hyatt Regency DFW Airport, Dallas, Texas | August 10 - 13, 2016<br>
+		                    Korean-American Scientists and Engineers Association <a href="http://www.ksea.org" target="_blank">www.ksea.org</a></p>
+
+		      </div>
+		  </div>
+		</footer>
+
+
+	</body>
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</html>
+

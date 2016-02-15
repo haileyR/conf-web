@@ -1,0 +1,26 @@
+{
+  "name": "ukc2016",
+  "authors": [
+    "Hailey Ryu <hailey@ca.ibm.com>"
+  ],
+  "description": "",
+  "main": "index.php",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "jquery": "~2.1.1",
+    "angular-route": "1.4.x",
+    "gulp": "3.9.x"
+  }
+}
