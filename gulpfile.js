@@ -1,44 +1,35 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
-var gulp = require('gulp');
-
-
+var reload = browserSync.reload;
 
 gulp.task('styles', function() {
-    gulp.src('./src/scss/*.scss')
-        .pipe(gulp.dest('./css'))
+    gulp.src('./src/css/*.css')
+        .pipe(reload({stream:true}));
 });
 
-//Watch task
-gulp.task('default',function() {
-    gulp.watch('./css/*.css',['styles']);
-}); 
-
 gulp.task('js', function () {
-    return gulp.src('./js/*.js')
+    return gulp.src('./src/js/*.js')
         // .pipe(concat('all.js'))
-        .pipe(gulp.dest('./js'));
+        // .pipe(gulp.dest('./src/js'))
+        .pipe(reload({stream:true}));
 });
 
 gulp.task('html', function () {
-    return gulp.src('./*.html')
-        .pipe(gulp.dest('./'));
+    return gulp.src('./**/*.html')
+        .pipe(reload({stream:true}));
 });
 
-gulp.task('js-watch', ['js'], browserSync.reload);
+//Watch task
+gulp.task('watch',function() {
+    gulp.watch('./src/css/*.css',['styles']);
+    gulp.watch('./src/js/*.js',['js']);
+    gulp.watch('./**/*.html', ['html']);
+});
 
-gulp.task('html-watch', ['html'], browserSync.reload);
-
-gulp.task('css-watch', ['css'], browserSync.reload);
-
-gulp.task('serve', ['js', 'html', 'styles'], function () {
+gulp.task('default', ['js', 'html', 'styles', 'watch'], function () {
     browserSync.init({
         server: {
             baseDir: "./"
         }
     });
-
-    gulp.watch("./*.js", ['js-watch']);
-    gulp.watch("./*.html", ['html-watch']);
-    gulp.watch("./*.css", ['styles']);
 });
