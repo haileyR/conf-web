@@ -14,7 +14,7 @@ body {
 	color:#4B545F !important;;
 	height: 100% !important;;
 	padding-top: 70px;
-} 
+}
 
 nav ul li:hover > ul {display: block;}
 
@@ -125,14 +125,14 @@ html, body {
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px; 
+  margin-bottom: -142px;
 }
 .page-wrap:after {
   content: "";
   display: block;
 }
 .site-footer, .page-wrap:after {
-  height: 142px; 
+  height: 142px;
 }
 
 
@@ -150,7 +150,8 @@ html, body {
  * Hide default border to remove 1px line.
  */
 .navbar-fixed-top {
-  border: 0;
+  border-width: 0 !important;
+	background:#4b545f !important;
 }
 
 /*
@@ -248,4 +249,11 @@ html, body {
 	width: 956px;
     margin: auto;
     margin-bottom: 20px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #FFFFFF !important;
+}
+.navbar-default .navbar-brand {
+    color: #FFFFFF !important;
 }

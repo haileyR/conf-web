@@ -61,5 +61,4 @@ function UCK2016Controller($http, $location) {
         vm.selectedSubSympIdx = sympIdx;
         $location.path('/symposiums');
     }
-    
 };
