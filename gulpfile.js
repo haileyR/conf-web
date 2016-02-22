@@ -3,14 +3,14 @@ var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
 gulp.task('styles', function() {
-    gulp.src('./src/css/*.css')
+    gulp.src('./public/css/*.css')
         .pipe(reload({stream:true}));
 });
 
 gulp.task('js', function () {
-    return gulp.src('./src/js/*.js')
+    return gulp.src('./public/js/*.js')
         // .pipe(concat('all.js'))
-        // .pipe(gulp.dest('./src/js'))
+        // .pipe(gulp.dest('./public/js'))
         .pipe(reload({stream:true}));
 });
 
@@ -21,8 +21,8 @@ gulp.task('html', function () {
 
 //Watch task
 gulp.task('watch',function() {
-    gulp.watch('./src/css/*.css',['styles']);
-    gulp.watch('./src/js/*.js',['js']);
+    gulp.watch('./public/css/*.css',['styles']);
+    gulp.watch('./public/js/*.js',['js']);
     gulp.watch('./**/*.html', ['html']);
 });
 
